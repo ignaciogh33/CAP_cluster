@@ -16,12 +16,12 @@ spec:
       - name: spark-worker
         image: dperdices/spark-worker:latest
         imagePullPolicy: IfNotPresent
-        resources:
-          requests:
-            cpu: 1
-            memory: 1Gi
-          limits:
-            cpu: 1
-            memory: 1Gi
         ports:
         - containerPort: 8081
+        resources:
+          requests:
+            cpu: "1"
+            memory: "1Gi"
+          limits:
+            cpu: "1"
+            memory: "1Gi"
