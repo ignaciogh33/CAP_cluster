@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: spark-master
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       component: spark-master
