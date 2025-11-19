@@ -1,0 +1,47 @@
+# --- RECURSO 1: Deployment para el Spark Master ---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: spark-master
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: spark-master
+  template:
+    metadata:
+      labels:
+        component: spark-master
+    spec:
+      containers:
+      - name: spark-master
+        image: dperdices/spark-master:latest
+        imagePullPolicy: IfNotPresent
+        resources:
+          requests:
+            cpu: 500m
+            memory: 1Gi
+          limits:
+            cpu: 500m
+            memory: 1Gi
+        ports:
+        - containerPort: 7077
+        - containerPort: 8080
+
+---
+# --- RECURSO 2: Service para exponer el Spark Master ---
+kind: Service
+apiVersion: v1
+metadata:
+  name: spark-master
+spec:
+  type: LoadBalancer
+  ports:
+    - name: webui
+      port: 8080
+      targetPort: 8080
+    - name: spark
+      port: 7077
+      targetPort: 7077
+  selector:
+    component: spark-master
