@@ -15,7 +15,7 @@ echo " Fecha: $(date)"
 echo " Nodos asignados: $SLURM_JOB_NODELIST"
 echo "=========================================================="
 
-INPUT="datos.bin"
+INPUT="datos_1G.bin"
 OUTPUT="salida_tmp.bin"
 
 # --- 1. BASELINE SERIAL ---
