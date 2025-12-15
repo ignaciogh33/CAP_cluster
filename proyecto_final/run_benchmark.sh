@@ -2,7 +2,7 @@
 #SBATCH --job-name=AES_Benchmark
 #SBATCH --output=resultado_%j.out
 #SBATCH --error=error_%j.err
-#SBATCH --nodes=2                # Solicitamos 2 nodos físicos
+#SBATCH --nodes=4                # Solicitamos 2 nodos físicos
 #SBATCH --ntasks=16              # Total de 16 procesos MPI
 #SBATCH --time=00:10:00          # Límite de tiempo 10 min
 
