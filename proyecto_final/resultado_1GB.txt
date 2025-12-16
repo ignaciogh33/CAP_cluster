@@ -1,0 +1,77 @@
+==========================================================
+ ESTUDIO AVANZADO DE RENDIMIENTO AES-CTR
+ Fecha: Mon Dec 15 17:50:33 CET 2025
+ Nodos asignados: compute-big-03-01,compute-big-04-01,compute-big-05-01,compute-big-07-01
+==========================================================
+
+>>> EJECUTANDO SERIAL (1 CPU) <<<
+completado en 17.024557 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 1 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 18.719797 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 2 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 9.557140 segundos
+   [B] Modo DISTRIBUIDO (Spread/Round-Robin):
+completado en 17.958589 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 4 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 5.121608 segundos
+   [B] Modo DISTRIBUIDO (Spread/Round-Robin):
+completado en 18.462446 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 6 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 9.705715 segundos
+   [B] Modo DISTRIBUIDO (Spread/Round-Robin):
+completado en 15.433734 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 8 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 12.662855 segundos
+   [B] Modo DISTRIBUIDO (Spread/Round-Robin):
+completado en 18.414510 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 10 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 13.368164 segundos
+   [B] Modo DISTRIBUIDO (Spread/Round-Robin):
+completado en 15.213769 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 14 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 14.767596 segundos
+   [B] Modo DISTRIBUIDO (Spread/Round-Robin):
+completado en 15.117476 segundos
+
+----------------------------------------------------------
+ PRUEBAS CON 16 PROCESOS
+----------------------------------------------------------
+   [A] Modo CENTRALIZADO (Compact/Fill):
+completado en 15.719161 segundos
+   [B] Modo DISTRIBUIDO (Spread/Round-Robin):
+completado en 17.575548 segundos
+
+   [*] Verificando integridad final...
+       -> OK: Archivo idéntico al serial.
+
+==========================================================
+ FIN DEL EXPERIMENTO COMPLETO
+==========================================================

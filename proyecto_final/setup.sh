@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "--- 1. Limpiando ejecutables y logs (MANTENIENDO DATOS) ---"
-# Quitamos los .bin del rm para no borrarlos
+# Limpiamos binarios compilados y salidas de slurm, pero NO los .bin de datos
 rm -f aes_serial aes_mpi *.out *.err
 
 echo "--- 2. Compilando códigos ---"
@@ -19,7 +19,7 @@ fi
 
 echo "--- 3. Gestionando Archivos de Datos ---"
 
-# 1. Archivo de 100MB (Mantener)
+# --- Archivo 1: 100 MB ---
 if [ -f "datos.bin" ]; then
     echo "✅ 'datos.bin' (100 MB) ya existe. No se toca."
 else
@@ -27,7 +27,23 @@ else
     dd if=/dev/urandom of=datos.bin bs=1M count=100 status=progress
 fi
 
-# 2. Archivo de 1GB (Nuevo)
+# --- Archivo 2: 256 MB (NUEVO) ---
+if [ -f "datos_256M.bin" ]; then
+    echo "✅ 'datos_256M.bin' (256 MB) ya existe. No se toca."
+else
+    echo "Generando 'datos_256M.bin' (256 MB)..."
+    dd if=/dev/urandom of=datos_256M.bin bs=1M count=256 status=progress
+fi
+
+# --- Archivo 3: 512 MB (NUEVO) ---
+if [ -f "datos_512M.bin" ]; then
+    echo "✅ 'datos_512M.bin' (512 MB) ya existe. No se toca."
+else
+    echo "Generando 'datos_512M.bin' (512 MB)..."
+    dd if=/dev/urandom of=datos_512M.bin bs=1M count=512 status=progress
+fi
+
+# --- Archivo 4: 1 GB ---
 if [ -f "datos_1G.bin" ]; then
     echo "✅ 'datos_1G.bin' (1 GB) ya existe. No se toca."
 else
@@ -36,4 +52,8 @@ else
 fi
 
 echo "--- ¡TODO LISTO! ---"
-echo "Para usar el archivo grande, edita run_benchmark.sh y pon: INPUT=\"datos_1G.bin\""
+echo "Archivos disponibles:"
+echo " 1. datos.bin      (100 MB)"
+echo " 2. datos_256M.bin (256 MB)"
+echo " 3. datos_512M.bin (512 MB)"
+echo " 4. datos_1G.bin   (1 GB)"
