@@ -16,7 +16,7 @@ echo " Nodos: $SLURM_JOB_NODELIST"
 echo "=========================================================="
 
 # --- CONFIGURACIÓN ---
-INPUT="datos_1G.bin"
+INPUT="datos_256M.bin"
 SERIAL_OUT="salida_serial.bin"
 MPI_OUT="salida_mpi.bin"
 
