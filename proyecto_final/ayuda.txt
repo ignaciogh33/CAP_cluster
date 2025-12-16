@@ -1,3 +1,5 @@
 ssh cap1463_03@150.244.65.78
 
 tail -f resultado_50123.out
+
+te voy a pasar los txt de todos los experimentos y quiero que me dés los resultados estructurados en una tabla y en un csv, por favor sé riguroso:
