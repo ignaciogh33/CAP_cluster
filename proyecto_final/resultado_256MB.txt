@@ -1,0 +1,70 @@
+==========================================================
+ ESTUDIO AVANZADO AES-CTR (DATASET 256 MB)
+ Fecha inicio: Tue Dec 16 10:39:40 CET 2025
+ Nodos: compute-big-03-01,compute-big-04-01,compute-big-05-01,compute-big-07-01
+==========================================================
+
+[10:39:40] >>> INICIANDO SERIAL (1 CPU)... Por favor espere.
+completado en 4.335277 segundos
+[10:39:49] >>> Serial TERMINADO.
+----------------------------------------------------------
+[10:39:49] PRUEBAS CON 1 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 4.342694 segundos
+----------------------------------------------------------
+[10:39:58] PRUEBAS CON 2 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 2.376693 segundos
+   [B] Ejecutando DISTRIBUIDO (Spread)...
+completado en 4.503564 segundos
+----------------------------------------------------------
+[10:40:14] PRUEBAS CON 4 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 1.303197 segundos
+   [B] Ejecutando DISTRIBUIDO (Spread)...
+completado en 4.552394 segundos
+----------------------------------------------------------
+[10:40:28] PRUEBAS CON 6 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 2.376509 segundos
+   [B] Ejecutando DISTRIBUIDO (Spread)...
+completado en 3.829432 segundos
+----------------------------------------------------------
+[10:40:43] PRUEBAS CON 8 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 3.115715 segundos
+   [B] Ejecutando DISTRIBUIDO (Spread)...
+completado en 4.292296 segundos
+----------------------------------------------------------
+[10:40:59] PRUEBAS CON 10 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 3.285762 segundos
+   [B] Ejecutando DISTRIBUIDO (Spread)...
+completado en 3.761002 segundos
+----------------------------------------------------------
+[10:41:15] PRUEBAS CON 14 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 3.649867 segundos
+   [B] Ejecutando DISTRIBUIDO (Spread)...
+completado en 3.663978 segundos
+----------------------------------------------------------
+[10:41:31] PRUEBAS CON 16 PROCESOS
+----------------------------------------------------------
+   [A] Ejecutando CENTRALIZADO (Compact)...
+completado en 3.818189 segundos
+   [B] Ejecutando DISTRIBUIDO (Spread)...
+completado en 4.085358 segundos
+
+[10:41:48] [*] Verificando integridad binaria...
+       -> OK: Archivo idéntico.
+
+==========================================================
+ FIN DEL EXPERIMENTO: Tue Dec 16 10:41:52 CET 2025
+==========================================================

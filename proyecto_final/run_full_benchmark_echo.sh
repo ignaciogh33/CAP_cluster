@@ -10,13 +10,13 @@
 module load gnu openmpi 2>/dev/null
 
 echo "=========================================================="
-echo " ESTUDIO AVANZADO AES-CTR (DATASET 1 GB)"
+echo " ESTUDIO AVANZADO AES-CTR (DATASET 512 MB)"
 echo " Fecha inicio: $(date)"
 echo " Nodos: $SLURM_JOB_NODELIST"
 echo "=========================================================="
 
 # --- CONFIGURACIÓN ---
-INPUT="datos_256M.bin"
+INPUT="datos_512M.bin"
 SERIAL_OUT="salida_serial.bin"
 MPI_OUT="salida_mpi.bin"
 
