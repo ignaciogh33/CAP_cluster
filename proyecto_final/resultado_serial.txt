@@ -1,0 +1,25 @@
+==========================================================
+ ESTUDIO DE ESCALABILIDAD - VERSIÓN SERIAL (BASELINE)
+ Fecha inicio: Tue Dec 16 13:01:09 CET 2025
+ Nodo asignado: compute-big-03-01
+==========================================================
+
+----------------------------------------------------------
+[13:01:09] >>> Procesando archivo: datos.bin (100M)
+completado en 1.684069 segundos
+
+----------------------------------------------------------
+[13:01:12] >>> Procesando archivo: datos_256M.bin (256M)
+completado en 4.261750 segundos
+
+----------------------------------------------------------
+[13:01:20] >>> Procesando archivo: datos_512M.bin (512M)
+completado en 8.576223 segundos
+
+----------------------------------------------------------
+[13:01:34] >>> Procesando archivo: datos_1G.bin (1.0G)
+completado en 17.287675 segundos
+
+==========================================================
+ FIN DEL EXPERIMENTO SERIAL: Tue Dec 16 13:02:07 CET 2025
+==========================================================
